@@ -9,8 +9,17 @@ module.exports = function(app) {
   app.post("/api/friends", function(req, res) {
   var newUser = req.body;
   console.log(newUser);
-  friendsArray.push(newUser);
+  friends.push(newUser);
   res.json(newUser);
+  var newUserScore;
+  var newUserName = newUser.nameInput;
+  console.log(newUserName);
+  newUserScoreArrary = [];
+  newUserScoreArrary.push(newUser.scores);
+  for (var i = 0; i < scores.length; i++) {
+    newUserScore += parseInt(newUserScoreArrary.scores[i]);
+    console.log(newUserScore);
+  }
   });
 
   app.post("/api/clear", function() {
