@@ -14,12 +14,17 @@ module.exports = function(app) {
   var newUserScore;
   var newUserName = newUser.nameInput;
   console.log(newUserName);
-  newUserScoreArrary = [];
-  newUserScoreArrary.push(newUser.scores);
-  for (var i = 0; i < scores.length; i++) {
-    newUserScore += parseInt(newUserScoreArrary.scores[i]);
-    console.log(newUserScore);
-  }
+  var newUserScoreArray = [];
+  newUserScoreArray.push(newUser.scores);
+  parseScoreArray = [];
+
+  console.log(newUserScoreArray);
+  //for (var i = 0; i < newUserScoreArray[0].length; i ++) {
+    //parseScoreArray = parseInt(newUserScoreArray[0][i]);
+    //console.log(parseScoreArray);
+  //}
+  //randomNum = parseScoreArray[2] + parseScoreArray[4];
+  //console.log(randomNum);
   });
 
   app.post("/api/clear", function() {
